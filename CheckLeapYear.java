@@ -1,5 +1,6 @@
 package sedLab01;
 import java.io.*;
+import java.util.Scanner;
 
 public class CheckLeapYear {
     public static void isLeapYear(int year)
@@ -26,8 +27,11 @@ public class CheckLeapYear {
     }
     public static void main(String[] args)
     {
-        isLeapYear(2020);
+        Scanner sc = new Scanner(system.in);
+        system.out.println("Enter Year");
+        int year = sc.nextInt();
 
-        isLeapYear(2023);
+        isLeapYear(year);
     }
+
 }
